@@ -1,0 +1,31 @@
+#container {
+  width: 800px;
+  height: 500px;
+  background-color: rgb(155, 202, 204);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: brown;
+  border: 1px solid;
+  border-color: black;
+}
+.card:hover {
+  width: 300px;
+  transition: 0.5s;
+}
+.content {
+  opacity: 0;
+  transition: 0.5s;
+}
+.card:hover .content {
+  opacity: 1;
+}
